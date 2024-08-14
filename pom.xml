@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>it.beergash</groupId>
-    <artifactId>tennis-data-parser</artifactId>
+    <artifactId>tennis-statistics</artifactId>
     <version>1.0.0</version>
     <modules>
         <module>tennis-data-common-repository</module>
