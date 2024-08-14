@@ -41,7 +41,8 @@ public class FileFeatureBuilder {
         FileTrace f7 = new FileTrace("7", "nationalityPlayerLoser");
         FileTrace f8 = new FileTrace("8", "score");
         FileTrace f9 = new FileTrace("9", "round");
-        sheet.setFields(Arrays.asList(f1, f2, f3, f4, f5, f6, f7, f8, f9));
+        FileTrace f10 = new FileTrace("10", "tournamentLevel");
+        sheet.setFields(Arrays.asList(f1, f2, f3, f4, f5, f6, f7, f8, f9, f10));
         ff.setSheets(Arrays.asList(sheet));
         return ff;
     }

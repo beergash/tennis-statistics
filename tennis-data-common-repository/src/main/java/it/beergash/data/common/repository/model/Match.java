@@ -1,7 +1,5 @@
 package it.beergash.data.common.repository.model;
 
-import it.beergash.data.common.repository.model.enums.TournamentLevel;
-
 public class Match {
 
     private String tournament;
@@ -13,7 +11,7 @@ public class Match {
     private String nationalityPlayerLoser;
     private String score;
     private String round;
-    private TournamentLevel tournamentLevel;
+    private String tournamentLevel;
 
     public String getTournament() {
         return tournament;
@@ -87,11 +85,11 @@ public class Match {
         this.round = round;
     }
 
-    public TournamentLevel getTournamentLevel() {
+    public String getTournamentLevel() {
         return tournamentLevel;
     }
 
-    public void setTournamentLevel(TournamentLevel tournamentLevel) {
+    public void setTournamentLevel(String tournamentLevel) {
         this.tournamentLevel = tournamentLevel;
     }
 

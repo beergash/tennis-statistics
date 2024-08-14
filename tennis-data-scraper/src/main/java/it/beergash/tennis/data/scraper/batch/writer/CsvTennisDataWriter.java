@@ -16,9 +16,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
+import javax.annotation.PostConstruct;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 @Component
 @StepScope
@@ -40,6 +43,12 @@ public class CsvTennisDataWriter implements ItemWriter<List<Match>> {
     private IReportWriter reportWriter;
 
     private ReportFeature reportFeature;
+
+    @PostConstruct
+    public void init() {
+        File dir = new File(dirTarget);
+        Arrays.stream(Objects.requireNonNull(dir.listFiles())).forEach(File::delete);
+    }
 
     @Override
     public void write(List<? extends List<Match>> list) throws Exception {

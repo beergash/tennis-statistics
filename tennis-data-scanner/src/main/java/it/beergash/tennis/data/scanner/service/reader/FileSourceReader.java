@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,7 @@ import java.util.stream.IntStream;
 public class FileSourceReader implements ISourceReader {
 
     public static final String INPUT_ATP_MATCHES_S_CSV = "/input/atp_matches_%s.csv";
+    public static final int START_YEAR = 1968;
 
     @Autowired
     @Qualifier(FileType.CSV)
@@ -30,6 +32,10 @@ public class FileSourceReader implements ISourceReader {
 
     @Autowired
     private FileFeatureBuilder fileFeatureBuilder;
+    public List<Match> readSourceInRangeYears() throws Exception {
+        int currentYear = LocalDate.now().getYear();
+        return readSourceInRangeYears(START_YEAR, currentYear);
+    }
 
     @Override
     public List<Match> readSourceInRangeYears(int startYear, int endYear) throws Exception {

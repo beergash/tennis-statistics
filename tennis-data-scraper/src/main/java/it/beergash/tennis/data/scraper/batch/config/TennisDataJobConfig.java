@@ -1,7 +1,7 @@
 package it.beergash.tennis.data.scraper.batch.config;
 
 import it.beergash.data.common.repository.model.Match;
-import it.beergash.tennis.data.scraper.batch.reader.SourceCsvGithubDataReader;
+import it.beergash.tennis.data.scraper.batch.reader.SourceCsvDataReader;
 import it.beergash.tennis.data.scraper.batch.writer.CsvTennisDataWriter;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -22,13 +22,13 @@ public class TennisDataJobConfig {
     private CsvTennisDataWriter dataWriter;
 
     @Autowired
-    private SourceCsvGithubDataReader sourceCsvGithubDataReader;
+    private SourceCsvDataReader sourceCsvDataReader;
 
     @Bean
     public Step tennisDataStep(StepBuilderFactory stepBuilderFactory) {
         return stepBuilderFactory.get("tennisDataStep")
                 .<List<Match>, List<Match>>chunk(1)
-                .reader(sourceCsvGithubDataReader)
+                .reader(sourceCsvDataReader)
                 .writer(dataWriter)
                 .build();
     }

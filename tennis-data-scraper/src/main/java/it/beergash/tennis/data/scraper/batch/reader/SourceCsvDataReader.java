@@ -23,7 +23,7 @@ import java.util.*;
 
 @Component
 @StepScope
-public class SourceCsvGithubDataReader implements ItemReader<List<Match>> {
+public class SourceCsvDataReader implements ItemReader<List<Match>> {
 
     public static final String UNKOKNW = "UNK";
     public static final int START_YEAR = 1968;
@@ -40,6 +40,10 @@ public class SourceCsvGithubDataReader implements ItemReader<List<Match>> {
 
     @PostConstruct
     public void init() {
+        buildCorrectScoresMap();
+    }
+
+    private void buildCorrectScoresMap() {
         correctScores.put("1-210", "12-10");
         correctScores.put("1-311", "13-11");
         correctScores.put("1-412", "14-12");
@@ -85,10 +89,9 @@ public class SourceCsvGithubDataReader implements ItemReader<List<Match>> {
         f3.setFieldJavaAttribute("score");
         f3.setPosition("24");
         f3.setInterpreter(s -> {
-            Optional<String> wrongScore = correctScores.entrySet().stream()
-                    .filter(cs -> StringUtils.containsIgnoreCase(s, cs.getKey()))
-                    .map(cs -> cs.getKey()).findFirst();
-            return wrongScore.isPresent() && s != null ? s.replace(wrongScore.get(), correctScores.get(wrongScore.get())) : s;
+            Optional<String> wrongScore = correctScores.keySet().stream()
+                    .filter(string -> StringUtils.containsIgnoreCase(s, string)).findFirst();
+            return wrongScore.map(string -> s.replace(string, correctScores.get(string))).orElse(s);
         });
         FileTrace f4 = new FileTrace();
         f4.setFieldJavaAttribute("playerLoser");
@@ -111,9 +114,12 @@ public class SourceCsvGithubDataReader implements ItemReader<List<Match>> {
         FileTrace f9 = new FileTrace();
         f9.setFieldJavaAttribute("surface");
         f9.setPosition("3");
-        List<FileTrace> fields = Arrays.asList(f1, f2, f3, f4, f5, f6, f7, f8, f9);
+        FileTrace f10 = new FileTrace();
+        f10.setFieldJavaAttribute("tournamentLevel");
+        f10.setPosition("5");
+        List<FileTrace> fields = Arrays.asList(f1, f2, f3, f4, f5, f6, f7, f8, f9, f10);
         sheet.setFields(fields);
-        List<FileSheet> sheets = Arrays.asList(sheet);
+        List<FileSheet> sheets = List.of(sheet);
         ff.setSheets(sheets);
         return ff;
     }

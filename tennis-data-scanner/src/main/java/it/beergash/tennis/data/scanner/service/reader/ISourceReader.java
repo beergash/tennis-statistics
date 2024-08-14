@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface ISourceReader {
 
-    public List<Match> readSourceInRangeYears(int startYear, int endYear) throws Exception;
+    List<Match> readSourceInRangeYears() throws Exception;
+
+    List<Match> readSourceInRangeYears(int startYear, int endYear) throws Exception;
 }
