@@ -1,7 +1,0 @@
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\batch\reader\SourceCsvGithubDataReader.java
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\batch\config\TennisDataJobLauncher.java
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\batch\writer\CsvTennisDataWriter.java
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\model\exceptions\MongoDbWriterException.java
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\batch\writer\MongoDBDataWriter.java
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\batch\config\TennisDataJobConfig.java
-C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scraper\src\main\java\it\beergash\tennis\data\scraper\TennisDataScraperApplication.java
