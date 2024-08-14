@@ -1,0 +1,7 @@
+it\beergash\tennis\data\scraper\batch\reader\SourceCsvGithubDataReader.class
+it\beergash\tennis\data\scraper\batch\config\TennisDataJobConfig.class
+it\beergash\tennis\data\scraper\batch\config\TennisDataJobLauncher.class
+it\beergash\tennis\data\scraper\model\exceptions\MongoDbWriterException.class
+it\beergash\tennis\data\scraper\TennisDataScraperApplication.class
+it\beergash\tennis\data\scraper\batch\writer\MongoDBDataWriter.class
+it\beergash\tennis\data\scraper\batch\writer\CsvTennisDataWriter.class

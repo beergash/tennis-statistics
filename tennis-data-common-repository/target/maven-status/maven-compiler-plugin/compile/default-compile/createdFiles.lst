@@ -1,0 +1,4 @@
+it\beergash\data\common\repository\model\Match.class
+it\beergash\data\common\repository\model\enums\TournamentLevel.class
+it\beergash\data\common\repository\model\enums\RoundEnum.class
+it\beergash\data\common\repository\model\Tournament.class

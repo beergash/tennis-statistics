@@ -1,0 +1,12 @@
+it\beergash\tennis\data\scanner\controller\MatchStatisticsController.class
+it\beergash\tennis\data\scanner\model\GenericMatchRequest.class
+it\beergash\tennis\data\scanner\model\exceptions\TennisScannerException.class
+it\beergash\tennis\data\scanner\service\reader\FileSourceReader.class
+it\beergash\tennis\data\scanner\service\TennisMatchStatistics.class
+it\beergash\tennis\data\scanner\utils\FileFeatureBuilder.class
+it\beergash\tennis\data\scanner\service\MatchStatisticsService.class
+it\beergash\tennis\data\scanner\service\reader\ISourceReader.class
+it\beergash\tennis\data\scanner\TennisDataScannerApplication.class
+it\beergash\tennis\data\scanner\model\LeastGamesNumberInSetPerPlayerRequest.class
+it\beergash\tennis\data\scanner\model\MatchPerYearAndTournamentRequest.class
+it\beergash\tennis\data\scanner\utils\MatchUtils.class

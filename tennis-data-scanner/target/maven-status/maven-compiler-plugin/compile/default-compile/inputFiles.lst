@@ -1,0 +1,12 @@
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\model\exceptions\TennisScannerException.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\controller\MatchStatisticsController.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\service\reader\FileSourceReader.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\TennisDataScannerApplication.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\model\GenericMatchRequest.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\model\MatchPerYearAndTournamentRequest.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\service\reader\ISourceReader.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\utils\FileFeatureBuilder.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\utils\MatchUtils.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\service\TennisMatchStatistics.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\model\LeastGamesNumberInSetPerPlayerRequest.java
+C:\Users\GBS07095\progetti\personal\tennis-data-parser\tennis-data-scanner\src\main\java\it\beergash\tennis\data\scanner\service\MatchStatisticsService.java
